@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase | Modern E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            secondary: '#f97316',
+            dark: '#111827',
+            light: '#f9fafb'
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-light text-dark font-sans scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-primary">ShopEase</h1>
+      <ul class="hidden md:flex gap-6 font-medium">
+        <li><a href="#home" class="hover:text-primary">Home</a></li>
+        <li><a href="#products" class="hover:text-primary">Products</a></li>
+        <li><a href="#categories" class="hover:text-primary">Categories</a></li>
+        <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+      </ul>
+      <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all">Shop Now</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-24 pb-16 bg-gradient-to-r from-blue-50 to-blue-100">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          Discover the <span class="text-primary">Best Deals</span> on Trendy Products
+        </h2>
+        <p class="text-gray-600 mb-6">
+          ShopEase brings you exclusive offers and top-rated items curated for your lifestyle.
+        </p>
+        <button class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Start Shopping</button>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1606813902914-5b8f8f84f4b6?auto=format&fit=crop&w=800&q=80" 
+             alt="Shopping" 
+             class="rounded-2xl shadow-lg" />
+        <div class="absolute -bottom-6 -left-6 bg-white px-6 py-3 rounded-lg shadow-md">
+          <p class="font-semibold">⭐ Rated 4.9/5 by 10K+ users</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="products" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Featured Products</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Product Card -->
+        <div class="bg-light rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img src="https://images.unsplash.com/photo-1606813902914-5b8f8f84f4b6?auto=format&fit=crop&w=800&q=80" class="rounded-xl mb-4" alt="">
+          <h3 class="font-semibold text-lg">Smart Watch</h3>
+          <p class="text-gray-500">₹3,999</p>
+          <button class="mt-3 bg-primary text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Add to Cart</button>
+        </div>
+
+        <div class="bg-light rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" class="rounded-xl mb-4" alt="">
+          <h3 class="font-semibold text-lg">Wireless Headphones</h3>
+          <p class="text-gray-500">₹2,499</p>
+          <button class="mt-3 bg-primary text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Add to Cart</button>
+        </div>
+
+        <div class="bg-light rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img src="https://images.unsplash.com/photo-1606813902905-b375a6e7cbe8?auto=format&fit=crop&w=800&q=80" class="rounded-xl mb-4" alt="">
+          <h3 class="font-semibold text-lg">Running Shoes</h3>
+          <p class="text-gray-500">₹1,999</p>
+          <button class="mt-3 bg-primary text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Add to Cart</button>
+        </div>
+
+        <div class="bg-light rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img src="https://images.unsplash.com/photo-1593032465171-8b2b3d85df97?auto=format&fit=crop&w=800&q=80" class="rounded-xl mb-4" alt="">
+          <h3 class="font-semibold text-lg">Leather Backpack</h3>
+          <p class="text-gray-500">₹4,499</p>
+          <button class="mt-3 bg-primary text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories" class="py-16 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Shop by Categories</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+          <img src="https://img.icons8.com/ios-filled/100/2563eb/t-shirt.png" class="mx-auto mb-4 w-16" alt="">
+          <h3 class="font-semibold">Fashion</h3>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+          <img src="https://img.icons8.com/ios-filled/100/2563eb/smartphone.png" class="mx-auto mb-4 w-16" alt="">
+          <h3 class="font-semibold">Electronics</h3>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+          <img src="https://img.icons8.com/ios-filled/100/2563eb/home.png" class="mx-auto mb-4 w-16" alt="">
+          <h3 class="font-semibold">Home Decor</h3>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+          <img src="https://img.icons8.com/ios-filled/100/2563eb/book.png" class="mx-auto mb-4 w-16" alt="">
+          <h3 class="font-semibold">Books</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-dark text-gray-300 py-10">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="text-white text-xl font-bold mb-3">ShopEase</h3>
+        <p>Bringing you the best products at unbeatable prices.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-lg font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">About</a></li>
+          <li><a href="#" class="hover:text-white">Contact</a></li>
+          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-lg font-semibold mb-3">Newsletter</h3>
+        <div class="flex">
+          <input type="email" placeholder="Your Email" class="px-3 py-2 rounded-l-lg focus:outline-none text-black w-full" />
+          <button class="bg-secondary text-white px-4 py-2 rounded-r-lg hover:bg-orange-600">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10 text-gray-400 text-sm">© 2025 ShopEase. All rights reserved.</div>
+  </footer>
+
+  <!-- JS (for small interactivity) -->
+  <script>
+    // Simple navbar shadow effect on scroll
+    const navbar = document.querySelector("nav");
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("shadow-lg", window.scrollY > 10);
+    });
+  </script>
+
+</body>
+</html>
